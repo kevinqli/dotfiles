@@ -84,7 +84,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 
-if [ -f ~/.profile ]; then . ~/.profile; fi 
+if [ -f ~/.bash_profile ]; then . ~/.profile; fi 
 
-if [ -f ~/.bashrc ]; then . ~/.bashrc; fi
 

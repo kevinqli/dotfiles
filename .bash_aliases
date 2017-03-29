@@ -1,6 +1,6 @@
 TF_ALIAS=fuck alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 alias resource='source ~/.zshrc'
-alias edit='vim -p ~/.zshrc ~/.profile ~/.bashrc ~/.bash_aliases'
+alias edit='vim -p ~/.zshrc ~/.bash_profile ~/.bash_aliases'
 
 # show hidden files
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
