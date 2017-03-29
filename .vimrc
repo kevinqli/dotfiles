@@ -3,7 +3,7 @@ set nocompatible
 set shell=bash\ --login
 set ruler
 
-set expandtab tabstop=2 shiftwidth=2 softtabstop=2 smarttab
+set expandtab tabstop=4 shiftwidth=4 softtabstop=4 smarttab
 set autoindent
 
 set mouse=a
