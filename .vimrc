@@ -1,7 +1,6 @@
-filetype off
 set nocompatible
+filetype off
 set shell=bash\ --login
-set ruler
 
 set expandtab tabstop=2 shiftwidth=2 softtabstop=2 smarttab
 set autoindent
@@ -12,6 +11,7 @@ set pastetoggle=<F10>
 set backspace=2
 set hlsearch!
 
+set ruler
 set number
 set colorcolumn=80
 
@@ -22,19 +22,18 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-syntax enable
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'altercation/vim-colors-solarized'
 
+syntax enable
 set background=dark
 let g:solarized_termtrans=1
 let g:solarized_termcolors=256
 colorscheme solarized
 
 execute pathogen#infect()
-
 filetype plugin indent on
 
 let g:tex_flavor='latex'
