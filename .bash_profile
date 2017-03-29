@@ -3,3 +3,4 @@ if [ -f ~/.quorarc ]; then . ~/.quorarc; fi
 git config --global remote.origin.tagopt --no-tags
 git config --global push.default upstream
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+export TERM=xterm-256color

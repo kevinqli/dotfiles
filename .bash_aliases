@@ -2,7 +2,7 @@ TF_ALIAS=fuck alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 alias resource='source ~/.zshrc'
 alias edit='vim -p ~/.zshrc ~/.bash_profile ~/.bash_aliases'
 
-alias ls='ls -G --color'
+alias ls='ls -G'
 alias ll='ls -lh'
 alias la='ls -lAh'
 alias ..='cd ..'
