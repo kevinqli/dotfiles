@@ -40,6 +40,8 @@ let g:tex_flavor='latex'
 let g:Tex_DefaultTargetFormat='pdf'
 let g:Tex_ViewRule_pdf='open $*.pdf'
 set grepprg=grep\ -nH\ $*
+imap <C-I> <Plug>IMAP_JumpForward
+nmap <C-I> <Plug>IMAP_JumpForward
 imap ∫ <Plug>Tex_MathBF
 imap ç <Plug>Tex_MathCal
 imap ¬ <Plug>Tex_LeftRight
