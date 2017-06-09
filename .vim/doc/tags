@@ -1,3 +1,7 @@
+:FinishRecovery	recoverPlugin.txt	/*:FinishRecovery*
+:RecoverPluginFinish	recoverPlugin.txt	/*:RecoverPluginFinish*
+:RecoverPluginGet	recoverPlugin.txt	/*:RecoverPluginGet*
+:RecoverPluginHelp	recoverPlugin.txt	/*:RecoverPluginHelp*
 Alph	latexhelp.txt	/*Alph*
 Alt-B	latex-suite.txt	/*Alt-B*
 Alt-C	latex-suite.txt	/*Alt-C*
@@ -21,6 +25,10 @@ Plug_Tex_InsertItemOnThisLine	latex-suite.txt	/*Plug_Tex_InsertItemOnThisLine*
 Plug_Tex_LeftRight	latex-suite.txt	/*Plug_Tex_LeftRight*
 Plug_Tex_MathBF	latex-suite.txt	/*Plug_Tex_MathBF*
 Plug_Tex_MathCal	latex-suite.txt	/*Plug_Tex_MathCal*
+RecovePlugin-config	recoverPlugin.txt	/*RecovePlugin-config*
+RecoverPlugin	recoverPlugin.txt	/*RecoverPlugin*
+RecoverPlugin-manual	recoverPlugin.txt	/*RecoverPlugin-manual*
+RecoverPlugin-misc	recoverPlugin.txt	/*RecoverPlugin-misc*
 Roman	latexhelp.txt	/*Roman*
 TClearCiteHist	latex-suite.txt	/*TClearCiteHist*
 TLook	latex-suite.txt	/*TLook*
@@ -320,6 +328,7 @@ automatic-package-detection	latex-suite.txt	/*automatic-package-detection*
 bibtex	latexhelp.txt	/*bibtex*
 bibtex-bindings	latex-suite.txt	/*bibtex-bindings*
 book-class	latexhelp.txt	/*book-class*
+cS	surround.txt	/*cS*
 center	latexhelp.txt	/*center*
 changing-commands	latex-suite.txt	/*changing-commands*
 changing-environments	latex-suite.txt	/*changing-environments*
@@ -329,6 +338,7 @@ compiler-output-customization	latex-suite.txt	/*compiler-output-customization*
 compiler-rules	latex-suite.txt	/*compiler-rules*
 compiling-multiple	latex-suite.txt	/*compiling-multiple*
 completion-window-preferences	latex-suite.txt	/*completion-window-preferences*
+cs	surround.txt	/*cs*
 custom-macros-menu	latex-suite.txt	/*custom-macros-menu*
 custom-packages	latex-suite.txt	/*custom-packages*
 customize-alt-key-maps	latex-suite.txt	/*customize-alt-key-maps*
@@ -345,11 +355,13 @@ customizing-place-holders	latex-suite.txt	/*customizing-place-holders*
 customizing-smart-keys	latex-suite.txt	/*customizing-smart-keys*
 customizing-viewing	latex-suite.txt	/*customizing-viewing*
 customizing-what-to-fold	latex-suite.txt	/*customizing-what-to-fold*
+cvim	recoverPlugin.txt	/*cvim*
 default-folding	latex-suite.txt	/*default-folding*
 description	latexhelp.txt	/*description*
 diacritic-mappings	latex-suite.txt	/*diacritic-mappings*
 displaymath	latexhelp.txt	/*displaymath*
 draft	latexhelp.txt	/*draft*
+ds	surround.txt	/*ds*
 editing-folding	latex-suite.txt	/*editing-folding*
 empty	latexhelp.txt	/*empty*
 enabling-searching	latex-suite.txt	/*enabling-searching*
@@ -376,6 +388,8 @@ forward-searching	latex-suite.txt	/*forward-searching*
 greek-letter-mappings	latex-suite.txt	/*greek-letter-mappings*
 headings	latexhelp.txt	/*headings*
 hyph-	latexhelp.txt	/*hyph-*
+i_CTRL-G_S	surround.txt	/*i_CTRL-G_S*
+i_CTRL-G_s	surround.txt	/*i_CTRL-G_s*
 im_1	imaps.txt	/*im_1*
 imaps-usage	imaps.txt	/*imaps-usage*
 imaps.txt	imaps.txt	/*imaps.txt*
@@ -892,6 +906,10 @@ pre-lengths	latexhelp.txt	/*pre-lengths*
 quotation	latexhelp.txt	/*quotation*
 quote-l	latexhelp.txt	/*quote-l*
 recommended-settings	latex-suite.txt	/*recommended-settings*
+recover-feedback	recoverPlugin.txt	/*recover-feedback*
+recover-history	recoverPlugin.txt	/*recover-history*
+recover-manual	recoverPlugin.txt	/*recover-manual*
+recover.vim	recoverPlugin.txt	/*recover.vim*
 remapping-latex-suite-keys	latex-suite.txt	/*remapping-latex-suite-keys*
 report-class	latexhelp.txt	/*report-class*
 roman	latexhelp.txt	/*roman*
@@ -904,6 +922,13 @@ sub-sup	latexhelp.txt	/*sub-sup*
 subscripts	latexhelp.txt	/*subscripts*
 superscripts	latexhelp.txt	/*superscripts*
 supporting-packages	latex-suite.txt	/*supporting-packages*
+surround	surround.txt	/*surround*
+surround-customizing	surround.txt	/*surround-customizing*
+surround-issues	surround.txt	/*surround-issues*
+surround-mappings	surround.txt	/*surround-mappings*
+surround-replacements	surround.txt	/*surround-replacements*
+surround-targets	surround.txt	/*surround-targets*
+surround.txt	surround.txt	/*surround.txt*
 tab'	latexhelp.txt	/*tab'*
 tab+	latexhelp.txt	/*tab+*
 tab-	latexhelp.txt	/*tab-*
@@ -918,6 +943,12 @@ theorem	latexhelp.txt	/*theorem*
 titlepage	latexhelp.txt	/*titlepage*
 twocolumn	latexhelp.txt	/*twocolumn*
 twoside	latexhelp.txt	/*twoside*
+vS	surround.txt	/*vS*
 verbatim	latexhelp.txt	/*verbatim*
 verse	latexhelp.txt	/*verse*
+vgS	surround.txt	/*vgS*
 why-IMAP	latex-suite.txt	/*why-IMAP*
+yS	surround.txt	/*yS*
+ySS	surround.txt	/*ySS*
+ys	surround.txt	/*ys*
+yss	surround.txt	/*yss*
