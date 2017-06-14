@@ -1,8 +1,7 @@
-TF_ALIAS=fuck alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
-alias resource='if [ -f ~/.zshrc ]; then . ~/.zshrc; else if [ -f ~/.bashrc ]; then . ~/.bashrc; fi; fi'
-alias edit='vim -p ~/.zshrc ~/.bash_profile ~/.bash_aliases'
+alias resource='if [ -f ~/.bashrc ]; then . ~/.bashrc; fi'
+alias edit='vim -p ~/.bashrc ~/.bash_aliases'
 
-alias ls='ls -G'
+alias ls='ls -G --color'
 alias ll='ls -lh'
 alias la='ls -lAh'
 alias ~='cd ~'
@@ -39,7 +38,3 @@ alias gd='git d'
 alias gdc='git d --cached'
 alias gps='git push'
 alias gpl='git pull'
-
-# quora
-alias dev='ssh -p 478 kli@10.0.2.249'
-alias dev2='ssh -p 478 kli@10.0.2.249 -t "tmux -CC new-session -A -D -s mainsession"'

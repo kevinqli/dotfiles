@@ -35,15 +35,15 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'altercation/vim-colors-solarized'
 
 syntax enable
+colorscheme solarized
 set background=dark
 let g:solarized_termcolors=256
-colorscheme solarized
 
 execute pathogen#infect()
 filetype plugin indent on
@@ -60,10 +60,9 @@ imap ¬ <Plug>Tex_LeftRight
 imap ˆ <Plug>Tex_InsertItemOnThisLine
 cabbr <expr> %% expand('%:p:h')
 
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_cmd = 'CtrlPMRU'
 let g:ctrlp_dont_split = 'NERD'
 
 nmap <Leader>f :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen=1
-
-let g:jedi#popup_on_dot = 0
