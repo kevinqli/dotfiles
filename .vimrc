@@ -1,53 +1,70 @@
 set nocompatible
 filetype off
-set shell=bash\ --login
-set runtimepath^=~/.vim/bundle/ctrlp.vim
-set autochdir
 
+" indentation
 set expandtab tabstop=4 shiftwidth=4 softtabstop=4 smarttab
 set autoindent
-set foldmethod=indent
-set foldnestmax=2
 
+" search
 set hlsearch!
 set ignorecase
 set smartcase
 
+" behavior
+set shell=/bin/bash\ -i
+set autochdir
 set mouse=a
 set clipboard=unnamed
 set pastetoggle=<F10>
 set backspace=2
 set splitright
 set splitbelow
+set foldlevelstart=99
 set tags=tags;/
+set lazyredraw
+set ttyfast
 
-set ruler
-set number
+" display
 set colorcolumn=80
 set laststatus=2
+set number
+set ruler
 set statusline+=%F
 set showtabline=2
+set cursorline
+set cursorcolumn
 
+" maps
 nnoremap <F3> :set hlsearch!<CR>
 nnoremap <F4> :w <bar> exec '!g++ '.shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r')<CR>
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+:command Wqa wqa
+:command Wq wq
+:command W w
+:command Q q
 
+" vundle
 set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#rc()
-Bundle 'gmarik/vundle'
-Bundle 'altercation/vim-colors-solarized'
+call vundle#begin()
+Plugin 'gmarik/vundle'
+Plugin 'altercation/vim-colors-solarized'
+call vundle#end()
 
-syntax enable
+" pathogen
+call pathogen#infect()
+call pathogen#helptags()
+filetype plugin indent on
+syntax on
+
+" solarized
 colorscheme solarized
 set background=dark
 let g:solarized_termcolors=256
 
-execute pathogen#infect()
-filetype plugin indent on
-
+" latex
 let g:tex_flavor='latex'
 let g:Tex_DefaultTargetFormat='pdf'
 let g:Tex_ViewRule_pdf='open $*.pdf'
@@ -60,9 +77,16 @@ imap ¬ <Plug>Tex_LeftRight
 imap ˆ <Plug>Tex_InsertItemOnThisLine
 cabbr <expr> %% expand('%:p:h')
 
+" ctrlp
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_cmd = 'CtrlPMRU'
 let g:ctrlp_dont_split = 'NERD'
 
+" NERDTree
 nmap <Leader>f :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen=1
+
+" python-mode
+nnoremap <F7> :PymodeLintAuto<CR>
+let g:pymode_rope_complete_on_dot = 0
+let g:pymode_rope_goto_definition_cmd = 'e'
