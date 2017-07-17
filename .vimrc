@@ -53,16 +53,16 @@ Plugin 'gmarik/vundle'
 Plugin 'altercation/vim-colors-solarized'
 call vundle#end()
 
+" solarized
+colorscheme solarized
+set background=dark
+let g:solarized_termcolors=256
+
 " pathogen
 call pathogen#infect()
 call pathogen#helptags()
 filetype plugin indent on
 syntax on
-
-" solarized
-colorscheme solarized
-set background=dark
-let g:solarized_termcolors=256
 
 " latex
 let g:tex_flavor='latex'

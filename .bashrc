@@ -4,4 +4,3 @@ set -o vi
 . ~/z.sh 
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 export TERM=xterm-256color
-shopt -s histappend
