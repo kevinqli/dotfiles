@@ -1,7 +1,7 @@
 alias resource='if [ -f ~/.bashrc ]; then . ~/.bashrc; fi'
 alias edit='vim -p ~/.bashrc ~/.bash_aliases'
 
-alias ls='ls -G --color'
+alias ls='ls -G'
 alias ll='ls -lh'
 alias la='ls -lAh'
 alias ~='cd ~'
