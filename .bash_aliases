@@ -1,5 +1,9 @@
-alias resource='if [ -f ~/.bashrc ]; then . ~/.bashrc; fi'
-alias edit='vim -p ~/.bashrc ~/.bash_aliases'
+alias resource='if [ -f ~/.zshrc ]; then . ~/.zshrc; fi'
+alias edit='vim -p ~/.zshrc ~/.bashrc ~/.bash_aliases'
+
+alias python=/usr/local/bin/python2
+
+alias nr='npm run'
 
 alias ls='ls -G'
 alias ll='ls -lh'
@@ -26,6 +30,7 @@ alias gau='git add -u'
 alias gc='git commit -m'
 alias gcamend='git commit --amend --no-edit'
 alias gbd='git branch -d'
+alias gbl='git branch -l'
 alias gch='git checkout'
 alias gchb='git checkout -b'
 alias gt='git stash'
