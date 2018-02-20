@@ -1,0 +1,13 @@
+pane	0	0	:zsh	1	:*	0	:/Users/kevinqli/Documents/stylometry/Gutenberg	1	zsh	:
+pane	0	0	:zsh	1	:*	1	:/Users/kevinqli/Documents/stylometry	0	vim	:vim utils.py
+pane	0	0	:zsh	1	:*	2	:/Users/kevinqli/Documents/stylometry	0	Python	:/usr/local/Cellar/python/2.7.14/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python
+pane	33	0	:zsh	1	:*	0	:/Users/kevinqli/.nvm	1	vim	:vim /Users/kevinqli/.bashrc
+pane	33	0	:zsh	1	:*	1	:/Users/kevinqli	0	ssh	:ssh kli@sb001.dev.rimeto.io
+pane	33	0	:zsh	1	:*	2	:/Users/kevinqli/Documents/rimeto/projects/zabo-www	0	node	:npm   
+pane	33	0	:zsh	1	:*	3	:/Users/kevinqli/Documents/rimeto/projects/zabo-mobile	0	node	:npm   
+pane	33	0	:zsh	1	:*	4	:/Users/kevinqli/Documents/rimeto/projects/zabo-mobile	0	node	:npm   
+pane	34	0	:zsh	1	:*	0	:/Users/kevinqli	1	zsh	:
+window	0	0	1	:*	e14e,143x37,0,0{61x37,0,0,0,81x37,62,0[81x11,62,0,1,81x25,62,12,3]}
+window	33	0	1	:*	6fb9,173x46,0,0{124x46,0,0,56,48x46,125,0[48x11,125,0,45,48x11,125,12,49,48x11,125,24,48,48x10,125,36,50]}
+window	34	0	1	:*	e313,173x46,0,0,43
+state	33	34
