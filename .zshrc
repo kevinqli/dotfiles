@@ -84,5 +84,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 
+bindkey -v
+bindkey '^R' history-incremental-search-backward
 if [ -f ~/.bash_profile ]; then . ~/.bash_profile; fi 
 

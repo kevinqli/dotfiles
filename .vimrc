@@ -14,7 +14,9 @@ set smartcase
 set shell=/bin/bash\ -i
 set autochdir
 set mouse=a
-set clipboard=unnamed
+if $TMUX == ''
+    set clipboard+=unnamed
+endif
 set pastetoggle=<F10>
 set backspace=2
 set splitright
@@ -74,6 +76,9 @@ imap ç <Plug>Tex_MathCal
 imap ¬ <Plug>Tex_LeftRight
 imap ˆ <Plug>Tex_InsertItemOnThisLine
 cabbr <expr> %% expand('%:p:h')
+" redef C-j to ∆
+imap ∆ <Plug>IMAP_JumpForward
+nmap ∆ <Plug>IMAP_JumpForward
 
 " ctrlp
 set runtimepath^=~/.vim/bundle/ctrlp.vim
