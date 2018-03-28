@@ -51,10 +51,14 @@ nnoremap <C-H> <C-W><C-H>
 " vundle
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-Plugin 'gmarik/vundle'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'gmarik/vundle'
+Plugin 'haya14busa/vim-easyoperator-line'
+Plugin 'haya14busa/vim-easyoperator-phrase'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-obsession'
+Plugin 'vim-latex/vim-latex'
 call vundle#end()
 
 " solarized
@@ -95,3 +99,4 @@ let NERDTreeQuitOnOpen=1
 nnoremap <F7> :PymodeLintAuto<CR>
 let g:pymode_rope_complete_on_dot = 0
 let g:pymode_rope_goto_definition_cmd = 'e'
+let g:pymode_rope_autoimport = 0

@@ -2,6 +2,8 @@ alias resource='if [ -f ~/.zshrc ]; then . ~/.zshrc; fi'
 alias edit='vim -p ~/.zshrc ~/.bashrc ~/.bash_aliases'
 
 alias python=/usr/local/bin/python2
+alias pip=/usr/local/bin/pip2
+alias ipython=/usr/local/bin/ipython2
 
 alias nr='npm run'
 
@@ -39,7 +41,7 @@ alias gm='git merge'
 alias gr='git rebase'
 alias gl='git log --oneline --decorate --graph'
 alias gs='git show'
-alias gd='git d'
-alias gdc='git d --cached'
+alias gd='git diff'
+alias gdc='git diff --cached'
 alias gps='git push'
 alias gpl='git pull'
