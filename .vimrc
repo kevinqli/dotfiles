@@ -49,10 +49,9 @@ nnoremap <C-H> <C-W><C-H>
 :command Q q
 
 " vundle
-set rtp+=~/.vim/bundle/vundle
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'gmarik/vundle'
 Plugin 'haya14busa/vim-easyoperator-line'
 Plugin 'haya14busa/vim-easyoperator-phrase'
 Plugin 'Lokaltog/vim-easymotion'

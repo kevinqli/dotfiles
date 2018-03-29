@@ -1,3 +1,11 @@
 *.pyc
+
+# vim
 .vim/.netrwhist
+.vim/bundle
+!.vim/bundle/Vundle.vim
+
+# tmux
 .tmux/resurrect
+.tmux/plugins
+!.tmux/plugins/tpm
