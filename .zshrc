@@ -1,3 +1,15 @@
+# Start tmux
+if command -v tmux>/dev/null; then
+  [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
+fi
+
+# /etc/profile
+if [ -f /etc/profile ]; then
+# Uncomment for Mac
+#     PATH=""
+    source /etc/profile
+fi
+
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
 
@@ -86,5 +98,20 @@ source $ZSH/oh-my-zsh.sh
 
 bindkey -v
 bindkey '^R' history-incremental-search-backward
-if [ -f ~/.bash_profile ]; then . ~/.bash_profile; fi 
+if [ -f ~/.bash_aliases ]; then . ~/.bash_aliases; fi 
+set -o vi
+. ~/z.sh 
+export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+export TERM=xterm-256color
+HISTSIZE=10000
+SAVEHIST=10000
+HISTFILE=~/.zsh_history
+HISTCONTROL=ignoreboth
+# Uncomment for nvm
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export ANDROID_HOME=/Users/kevinqli/Library/Android/sdk
+export ANDROID_SDK_ROOT=$ANDROID_HOME
+export PYTHONPATH=/USers/kevinqli/Documents/
 
