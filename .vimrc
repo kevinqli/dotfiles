@@ -54,7 +54,10 @@ call vundle#begin()
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'haya14busa/vim-easyoperator-line'
 Plugin 'haya14busa/vim-easyoperator-phrase'
+Plugin 'kien/ctrlp.vim'
 Plugin 'Lokaltog/vim-easymotion'
+Plugin 'python-mode/python-mode'
+Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-obsession'
 Plugin 'vim-latex/vim-latex'
@@ -86,7 +89,7 @@ imap ∆ <Plug>IMAP_JumpForward
 nmap ∆ <Plug>IMAP_JumpForward
 
 " ctrlp
-set runtimepath^=~/.vim/bundle/ctrlp.vim
+set rtp^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_cmd = 'CtrlPMRU'
 let g:ctrlp_dont_split = 'NERD'
 
