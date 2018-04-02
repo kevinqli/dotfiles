@@ -7,7 +7,12 @@ alias ipython=/usr/local/bin/ipython2
 
 alias nr='npm run'
 
-alias ls='ls -G'
+if ls --help 2>&1 | grep -q -- --color
+then
+    alias ls='ls --color=auto -F'
+else
+    alias ls='ls -FG'
+fi
 alias ll='ls -lh'
 alias la='ls -lAh'
 alias ~='cd ~'
