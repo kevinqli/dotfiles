@@ -1,10 +1,6 @@
 alias resource='if [ -f ~/.zshrc ]; then . ~/.zshrc; fi'
 alias edit='vim -p ~/.zshrc ~/.bashrc ~/.bash_aliases'
 
-alias python=/usr/local/bin/python2
-alias pip=/usr/local/bin/pip2
-alias ipython=/usr/local/bin/ipython2
-
 alias nr='npm run'
 
 if ls --help 2>&1 | grep -q -- --color

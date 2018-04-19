@@ -1,6 +1,6 @@
 # Start tmux
 if command -v tmux>/dev/null; then
-  [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
+  [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux a -t 0
 fi
 
 # /etc/profile
@@ -111,7 +111,4 @@ HISTCONTROL=ignoreboth
 # export NVM_DIR="$HOME/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-export ANDROID_HOME=/Users/kevinqli/Library/Android/sdk
-export ANDROID_SDK_ROOT=$ANDROID_HOME
-export PYTHONPATH=/USers/kevinqli/Documents/
 

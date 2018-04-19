@@ -60,6 +60,7 @@ Plugin 'python-mode/python-mode'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-obsession'
+Plugin 'tpope/vim-sensible'
 Plugin 'vim-latex/vim-latex'
 call vundle#end()
 
@@ -67,12 +68,6 @@ call vundle#end()
 colorscheme solarized
 set background=dark
 let g:solarized_termcolors=256
-
-" pathogen
-call pathogen#infect()
-call pathogen#helptags()
-filetype plugin indent on
-syntax on
 
 " latex
 let g:tex_flavor='latex'
@@ -99,6 +94,11 @@ let NERDTreeQuitOnOpen=1
 
 " python-mode
 nnoremap <F7> :PymodeLintAuto<CR>
-let g:pymode_rope_complete_on_dot = 0
+let g:pymode_rope = 1
 let g:pymode_rope_goto_definition_cmd = 'e'
-let g:pymode_rope_autoimport = 0
+
+" pathogen
+call pathogen#infect()
+call pathogen#helptags()
+syntax on
+filetype plugin indent on
