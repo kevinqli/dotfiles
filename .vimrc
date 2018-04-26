@@ -96,6 +96,7 @@ let NERDTreeQuitOnOpen=1
 nnoremap <F7> :PymodeLintAuto<CR>
 let g:pymode_rope = 1
 let g:pymode_rope_goto_definition_cmd = 'e'
+let g:pymode_rope_lookup_project = 1
 
 " pathogen
 call pathogen#infect()
