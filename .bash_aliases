@@ -1,5 +1,5 @@
 alias resource='if [ -f ~/.zshrc ]; then . ~/.zshrc; fi'
-alias edit='vim -p ~/.zshrc ~/.bashrc ~/.bash_aliases'
+alias edit='vim -p ~/.zshrc ~/.bashrc ~/.bash_profile ~/.bash_aliases ~/.tmux.conf'
 
 alias nr='npm run'
 

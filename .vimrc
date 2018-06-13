@@ -25,6 +25,9 @@ set foldlevelstart=99
 set tags=tags;/
 set lazyredraw
 set ttyfast
+set autoread
+set shellcmdflag=-ic
+set ttimeoutlen=10
 
 " display
 set colorcolumn=80
@@ -35,6 +38,7 @@ set statusline+=%F
 set showtabline=2
 set cursorline
 set cursorcolumn
+set list
 
 " maps
 nnoremap <F3> :set hlsearch!<CR>
@@ -57,7 +61,6 @@ Plugin 'haya14busa/vim-easyoperator-phrase'
 Plugin 'kien/ctrlp.vim'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'python-mode/python-mode'
-Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-obsession'
 Plugin 'tpope/vim-sensible'
@@ -68,6 +71,7 @@ call vundle#end()
 colorscheme solarized
 set background=dark
 let g:solarized_termcolors=256
+let g:solarized_termtrans=1
 
 " latex
 let g:tex_flavor='latex'
@@ -86,17 +90,14 @@ nmap ∆ <Plug>IMAP_JumpForward
 " ctrlp
 set rtp^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_cmd = 'CtrlPMRU'
-let g:ctrlp_dont_split = 'NERD'
-
-" NERDTree
-nmap <Leader>f :NERDTreeToggle<CR>
-let NERDTreeQuitOnOpen=1
 
 " python-mode
 nnoremap <F7> :PymodeLintAuto<CR>
 let g:pymode_rope = 1
+let g:pymode_rope_autoimport = 1
 let g:pymode_rope_goto_definition_cmd = 'e'
 let g:pymode_rope_lookup_project = 1
+let g:pymode_python = 'python'
 
 " pathogen
 call pathogen#infect()
