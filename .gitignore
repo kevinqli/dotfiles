@@ -9,3 +9,9 @@
 .tmux/resurrect
 .tmux/plugins
 !.tmux/plugins/tpm
+
+# macOS
+.DS_Store
+
+# vim generated
+.vim/doc/tags

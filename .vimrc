@@ -97,7 +97,7 @@ let g:pymode_rope = 1
 let g:pymode_rope_autoimport = 1
 let g:pymode_rope_goto_definition_cmd = 'e'
 let g:pymode_rope_lookup_project = 1
-let g:pymode_python = 'python'
+let g:pymode_python = 'python3'
 
 " pathogen
 call pathogen#infect()

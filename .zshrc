@@ -109,9 +109,25 @@ SAVEHIST=10000
 HISTFILE=~/.zsh_history
 HISTCONTROL=ignoreboth
 KEYTIMEOUT=1
-# Uncomment for nvm
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# nvm configuration
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 source ~/opp.zsh
 source ~/opp/*.zsh
+
+# Google Cloud SDK
+export PATH="/Users/kevinqli/google-cloud-sdk/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/kevinqli/.lmstudio/bin"
+# End of LM Studio CLI section
+
+export JAVA_HOME=/opt/homebrew/opt/openjdk@17
+export PATH="$JAVA_HOME/bin:$PATH"
+
+export PATH="$PATH:/Users/kevinqli/.daml/bin"
+
+# Use Homebrew MacVim with Python 3 support
+alias vim="/opt/homebrew/bin/vim"
